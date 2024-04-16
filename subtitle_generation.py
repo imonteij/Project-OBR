@@ -180,7 +180,7 @@ def run_subtitle_generation():
         
         summarization_prompt = f"Create a youtube title from this transcript; make the title under 55 characters, DO NOT INCLUDE A COLON IN THE TITLE, and it should evoke curiousity out of the reader: {transcription_result}"
         max_tokens = 50
-        client = OpenAI(api_key='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')
+        client = OpenAI(api_key='')
         response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
